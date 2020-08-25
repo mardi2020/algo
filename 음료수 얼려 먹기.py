@@ -1,16 +1,10 @@
-#n, m = map(int, input().split())
-n, m = 4, 5
-graph = [
-    [0,0,1,1,0],
-    [0,0,0,1,1],
-    [1,1,1,1,1],
-    [0,0,0,0,0]
-]
-#graph = []
+n, m = map(int, input().split())
+
+graph = []
 visited = []
 
 for _ in range(n):
-    #graph.append(list(map(int, input())))
+    graph.append(list(map(int, input())))
     visited.append([False]*m)
 
 dx = [0, 0, -1, 1]
